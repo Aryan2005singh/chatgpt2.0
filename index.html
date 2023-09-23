@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="left-pane">
+            <div class="top-header">
+                <button class="new-chat">New Chat</button>
+                <button class="close-sidebar">X</button>
+            </div>
+            <div class="list-of-chats">
+                <!-- Existing chat items -->
+                <div class="single-chat">
+                    <div class="chat-icon"></div>
+                    <div class="chat-title">Chat 1</div>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="upgrade-plan">
+                    <div class="account-icon"></div>
+                    <div class="upgrade-text">Upgrade to Plus</div>
+                    <div class="new-label">New</div>
+                </div>
+                <div class="profile-details">
+                    <div class="user-avatar"></div>
+                    <div class="user-name">User Name</div>
+                    <button class="more-options">...</button>
+                </div>
+            </div>
+            <!-- ... (left pane content, as before) ... -->
+        </div>
+        <div class="right-pane">
+            <div class="floating-buttons">
+                <button class="gpt-button">GPT-3.5</button>
+                <button class="gpt-button">GPT-4</button>
+            </div>
+            <div class="messages-section">
+                <!-- Messages will be dynamically added here using JavaScript -->
+            </div>
+            <div class="send-message">
+                <textarea class="input-box" placeholder="Type your message..."></textarea>
+                <button class="send-icon">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
